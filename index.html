@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Viajemos juntos · Dota</title>
+<style>
+:root{--bg:#f6f8fc;--card:#ffffff;--text:#16202e;--muted:#4a5a70;--brand:#0b4fa8;--brand-text:#ffffff;--accent:#ffc928;--border:#d5dcea;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1522;--card:#18223a;--text:#f1f4fa;--muted:#b4c0d6;--brand:#6aa5ff;--brand-text:#0b1220;--accent:#ffc928;--border:#2c3a58}}
+:root[data-theme="dark"]{--bg:#0e1522;--card:#18223a;--text:#f1f4fa;--muted:#b4c0d6;--brand:#6aa5ff;--brand-text:#0b1220;--accent:#ffc928;--border:#2c3a58}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:18px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+main{max-width:560px;margin:0 auto;padding:20px 16px 40px}
+header{text-align:center;margin-bottom:20px}
+.logo{display:inline-block;background:var(--brand);color:var(--brand-text);font-weight:800;font-size:1.4rem;letter-spacing:.08em;padding:6px 18px;border-radius:10px;border-bottom:5px solid var(--accent)}
+h1{font-size:1.6rem;line-height:1.2;margin:14px 0 4px}
+.sub{color:var(--muted);margin:0}
+.logo-wrap{display:inline-block;background:#ffffff;border-radius:14px;padding:10px 18px;border:1px solid var(--border)}
+.logo-img{display:block;width:100%;max-width:260px;height:auto}
+.btn{display:flex;align-items:center;gap:14px;width:100%;padding:18px;margin:12px 0;background:var(--card);color:var(--text);border:2px solid var(--border);border-radius:16px;text-decoration:none;font-weight:700;font-size:1.1rem;min-height:72px}
+.btn:focus-visible,.back:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.btn .ic{font-size:1.9rem}
+.btn small{display:block;font-weight:400;color:var(--muted);font-size:.9rem}
+.btn.main{background:var(--brand);color:var(--brand-text);border-color:var(--brand)}
+.btn.main small{color:inherit;opacity:.9}
+.back{display:inline-block;margin:0 0 12px;color:var(--brand);font-weight:700;text-decoration:none;padding:8px 0}
+h2{font-size:1.5rem;margin:0 0 8px}
+.box{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:6px 18px;margin:12px 0}
+.box h3{margin:14px 0 4px;font-size:1.1rem}
+.box p,.box li{margin:4px 0 12px}
+ul{padding-left:20px;margin:6px 0}
+.note{font-size:.9rem;color:var(--muted);margin-top:18px}
+footer{margin-top:28px;text-align:center;color:var(--muted);font-size:.9rem}
+[hidden]{display:none!important}
+</style>
+</head>
+<body>
+<main>
+<header>
+  <div class="logo-wrap"><img class="logo-img" src="data:image/jpeg;base64,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" alt="DOTA, logo de la empresa"></div>
+  <h1>Viajemos juntos</h1>
+  <p class="sub">Todo lo que necesitás saber, en un solo lugar.</p>
+</header>
+
+<!-- INICIO -->
+<section id="v-inicio">
+  <a class="btn" href="#derechos"><span class="ic">🧾</span><span>Mis derechos como pasajero<small>Qué podés pedir y cómo reclamar</small></span></a>
+  <a class="btn" href="#accesibilidad"><span class="ic">♿</span><span>Accesibilidad<small>Rampas, asientos reservados y ayuda</small></span></a>
+  <a class="btn" href="#convivencia"><span class="ic">🤝</span><span>Convivencia<small>Cómo viajar mejor entre todos</small></span></a>
+  <a class="btn" href="#nosotros"><span class="ic">🚍</span><span>Sobre nosotros<small>Quiénes somos</small></span></a>
+  <a class="btn main" href="https://forms.gle/Km3WVCm7xjFrUZSPA" target="_blank" rel="noopener"><span class="ic">💬</span><span>Reclamos y opiniones<small>Contanos tu experiencia o hacé tu reclamo</small></span></a>
+</section>
+
+<!-- DERECHOS -->
+<section id="v-derechos" hidden>
+  <a class="back" href="#">← Volver al inicio</a>
+  <h2>🧾 Mis derechos como pasajero</h2>
+  <div class="box">
+    <h3>Tenés derecho a:</h3>
+    <ul>
+      <li>Recibir información clara sobre recorridos, horarios y desvíos.</li>
+      <li>Viajar en una unidad limpia, segura y en buen estado.</li>
+      <li>Recibir un trato respetuoso del personal.</li>
+      <li>Usar los asientos reservados y los beneficios que te correspondan.</li>
+      <li>Reclamar y recibir una respuesta.</li>
+    </ul>
+    <h3>¿Cómo reclamar?</h3>
+    <p>Entrá en “Reclamos y opiniones”, completá el formulario con línea, horario y número de interno, y contanos qué pasó.</p>
+  </div>
+  <a class="btn main" href="https://forms.gle/Km3WVCm7xjFrUZSPA" target="_blank" rel="noopener"><span class="ic">💬</span><span>Hacer un reclamo</span></a>
+  <p class="note">Texto base: revisarlo con el área legal de la empresa antes de publicar.</p>
+</section>
+
+<!-- ACCESIBILIDAD -->
+<section id="v-accesibilidad" hidden>
+  <a class="back" href="#">← Volver al inicio</a>
+  <h2>♿ Accesibilidad</h2>
+  <div class="box">
+    <h3>Rampa y asientos reservados</h3>
+    <p>Las unidades accesibles tienen rampa y asientos reservados para personas con discapacidad, adultos mayores, embarazadas y personas con niños en brazos.</p>
+    <h3>Cómo pedir ayuda</h3>
+    <ul>
+      <li>Hacé una seña clara al chofer desde la parada.</li>
+      <li>Avisá que necesitás la rampa y esperá a que la unidad se detenga por completo.</li>
+      <li>Si necesitás ayuda para subir o bajar, pedila: el personal está para ayudarte.</li>
+    </ul>
+    <h3>¿La rampa no funcionó?</h3>
+    <p>Contanos en el formulario de “Reclamos y opiniones”. Indicá línea, número de interno y horario.</p>
+    <h3>Entre todos</h3>
+    <p>Dejá libres los espacios reservados y ofrecé tu lugar sin que te lo pidan.</p>
+  </div>
+  <a class="btn main" href="https://forms.gle/Km3WVCm7xjFrUZSPA" target="_blank" rel="noopener"><span class="ic">♿</span><span>Reportar un problema</span></a>
+</section>
+
+<!-- CONVIVENCIA -->
+<section id="v-convivencia" hidden>
+  <a class="back" href="#">← Volver al inicio</a>
+  <h2>🤝 Convivencia</h2>
+  <div class="box">
+    <h3>Pequeños gestos, mejor viaje</h3>
+    <ul>
+      <li>Cedé el asiento a quien lo necesite, sin esperar a que te lo pidan.</li>
+      <li>Sacate la mochila y ponela en el piso o adelante.</li>
+      <li>Usá auriculares para música y videos.</li>
+      <li>Dejá bajar antes de subir.</li>
+      <li>Avanzá hacia el fondo para que entren más personas.</li>
+      <li>Tratá con respeto al chofer y a los demás pasajeros.</li>
+      <li>Pedí la parada con tiempo y no ensucies la unidad.</li>
+    </ul>
+    <h3>🎒 Objetos perdidos</h3>
+    <p>Si olvidaste algo en una unidad, completá el formulario con la línea, el horario aproximado, el número de interno y una descripción del objeto.</p>
+    <a class="btn main" href="https://forms.gle/Km3WVCm7xjFrUZSPA" target="_blank" rel="noopener"><span class="ic">🎒</span><span>Reclamar un objeto perdido</span></a>
+  </div>
+  <p class="sub">Viajar bien es cosa de todos.</p>
+</section>
+
+<!-- SOBRE NOSOTROS -->
+<section id="v-nosotros" hidden>
+  <a class="back" href="#">← Volver al inicio</a>
+  <h2>🚍 Sobre nosotros</h2>
+  <a class="btn" href="#historia"><span class="ic">📖</span><span>Nuestra historia</span></a>
+  <a class="btn" href="#bases"><span class="ic">🧱</span><span>Nuestras bases</span></a>
+  <a class="btn" href="#lineas"><span class="ic">🚌</span><span>Nuestras líneas</span></a>
+</section>
+
+<!-- NUESTRA HISTORIA -->
+<section id="v-historia" hidden>
+  <a class="back" href="#nosotros">← Volver a Sobre nosotros</a>
+  <h2>📖 Nuestra historia</h2>
+  <div class="box">
+    <p>Somos DOTA, una empresa argentina dedicada al transporte urbano y suburbano de pasajeros en el AMBA.</p>
+    <p>Fundada en 1955, comenzamos nuestra historia con la línea 208 (actual línea 28). A lo largo de los años, crecimos mediante la incorporación de nuevas líneas y empresas, convirtiéndonos en uno de los principales grupos de transporte del país.</p>
+    <p>Hoy seguimos conectando personas y comunidades a través del transporte público.</p>
+  </div>
+</section>
+
+<!-- NUESTRAS BASES -->
+<section id="v-bases" hidden>
+  <a class="back" href="#nosotros">← Volver a Sobre nosotros</a>
+  <h2>🧱 Nuestras bases</h2>
+  <div class="box">
+    <h3>Nuestra misión</h3>
+    <p>Ofrecer un servicio de transporte de calidad, promoviendo el desarrollo de nuestro equipo de trabajo, generando valor y contribuyendo al desarrollo sustentable del sector.</p>
+    <h3>Nuestra visión</h3>
+    <p>Ser la alternativa de transporte de pasajeros más elegida por la calidad y confiabilidad de nuestros servicios.</p>
+    <h3>Nuestros valores</h3>
+    <p>Nos guiamos por la responsabilidad, la integridad, el compromiso, la apertura al diálogo, la organización y la flexibilidad.</p>
+  </div>
+</section>
+
+<!-- NUESTRAS LINEAS -->
+<section id="v-lineas" hidden>
+  <a class="back" href="#nosotros">← Volver a Sobre nosotros</a>
+  <h2>🚌 Nuestras líneas</h2>
+  <div class="box">
+    <h3>Líneas que le pertenecen</h3>
+    <p>Las líneas de la empresa DOTA en la Ciudad de Buenos Aires son: 5, 6, 7, 8, 9, 20, 21, 23, 24, 25, 28, 31, 44, 50, 51, 56, 57, 74, 76, 79, 84, 91, 99, 100, 101, 106, 107, 108, 115, 117, 130, 135, 146, 150, 161, 164, 168, 177 y 188.</p>
+    <p>Las líneas de la empresa DOTA en la Provincia de Buenos Aires: 256, 263, 271, 299, 370, 384, 385, 388, 403, 405, 421, 429, 435, 440, 503, 514, 520, 540, 550, 551, 552, 553, 570, 740.</p>
+  </div>
+  <a class="btn main" href="https://claude.ai/artifact/66TP5TG4p7KWvPktNFNaRA" target="_blank" rel="noopener"><span class="ic">🤖</span><span>Hablar con Dotita<small>Nuestro bot te ayuda con tus consultas</small></span></a>
+</section>
+
+<footer>Dota · Gracias por viajar con nosotros</footer>
+</main>
+
+<script>
+/* === COMPLETAR ESTOS DATOS === */
+var CFG = {
+  formFelicitar: "#",   /* link del Google Form (opción felicitar) */
+  formReclamo:   "#",   /* link del Google Form (opción reclamo) */
+  formAcc:       "#",   /* link del Google Form (opción accesibilidad) */
+  whatsapp:      "https://wa.me/549XXXXXXXXXX",
+  telefono:      "[COMPLETAR]",
+  mail:          "[COMPLETAR]"
+};
+function $(id){return document.getElementById(id)}
+
+var views=["inicio","derechos","accesibilidad","convivencia","nosotros","historia","bases","lineas"];
+function route(){
+  var h=(location.hash||"").replace("#","");
+  if(views.indexOf(h)<0||h==="")h="inicio";
+  views.forEach(function(v){$("v-"+v).hidden=(v!==h)});
+  window.scrollTo(0,0);
+}
+window.addEventListener("hashchange",route);
+route();
+</script>
+</body>
+</html>
